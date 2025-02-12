@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Clínica & Petshop</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Usando um CSS externo -->
+</head>
+<body>
+    <div class="container">
+        <a href=""><img src="imagem/logo com nome.png" alt="Logo Clinica" class="img__logonome"></a>
+        <h2 class="container__cadastro">Informe seus dados de acesso</h2>
+        
+        <form action="dashboard.html" method="POST">
+            <label for="usuario">*Email, celular ou login</label>
+            <input type="text" id="usuario" name="usuario" required>
+            
+            <label for="senha">*Senha</label>
+            <input type="password" id="senha" name="senha" required>
+            
+            <button type="submit">Entrar</button>
+        </form>
+            <a href="#">Clique aqui caso tenha esquecido a senha ou login</a>
+        <p>Não tem conta ainda? <a href="cadastro.html">Criar conta</a></p>
+    </div>
+</body>
+</html>
