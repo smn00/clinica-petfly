@@ -1,65 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VIDA ANIMAL</title>
+
+    <link rel="stylesheet" href="/styles.css/reset.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css/home.css">
 </head>
+
 <body>
     
-    <header>
-        <h1>Vida Animal</h1>
-        <h2>Clinica & Petshop</h2>
+    <header class="cabeçalho">
+        <img src="/imagem/Logo1.png" alt="Logo Vida Animal" class="logotipo">
 
-        <div id="login-veterinario">
-            <h2>Acesso Veterinário</h2>
-            <button type="button" onclick="fazerLogin()">Login</button>
-            <button type="button" onclick="fazerCadastro()">Cadastro</button>
+        <div id="login" class="login">
+            <a href="#" class="login__veterinario">Acesso Veterinário </a>
+            <div class="login__usuario">
+                <button type="button" onclick="ligueAgora()" class="botão__acesso">Ligue agora <img src="/imagem/seta.png" alt="" class="seta" ></button>
+                <button type="button" onclick="areaDoCliente()" class="botão__acesso">Area do cliente <img src="/imagem/seta.png" alt="" class="seta"></button>
+            </div>
         </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Cadastro</a></li>
-            <li><a href="#">Agendamento</a></li>
-            <li><a href="#">Exames</a></li>
-            <li><a href="#">Petshop</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Sobre Nós</a></li>
+
+    <nav class="navegação">
+        <ul class="navegação__container">
+            <li class="navegação__content"><a href="#">Inicio</a></li>
+            <li class="navegação__content"><a href="#">Petshop</a></li>
+            <li class="navegação__content"><a href="#">Contato</a></li>
+            <li class="navegação__content"><a href="#">Sobre nós</a></li>
         </ul>
     </nav>
     
-    <main>
-        <h2>Bem-vindo à VIDA ANIMAL Cuidando do seu pet com amor e dedicação!</h2>
-
-        <p>Na VIDA ANIMAL sabemos que seu pet é parte da família. Por isso, oferecemos um atendimento completo, humanizado e especializado para garantir a saúde e o bem-estar do seu melhor amigo.</p>
+    <main class="about__container">
+        <h2 class="about__titulo"><span class="saudação">Bem-vindo(a)</span> à <br> <img src="/imagem/Logo.png" alt="Logo da petshop" class="logo__about"> <br>Cuidando do seu pet com <br>amor e dedicação!</h2>
     </main>
 
-    <aside>
-        <h1>Receba as novidades!</h1>
-
-        <p></p>
-
-        <form action="seu-script.php" method="POST">
-            <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" required>
+    <section class="about__content">
+        <img src="/imagem/pegadas.png" alt="Pegadas" class="pegadas"><p class="parágrafo">Na<img src="/imagem/Logo.png" alt="Logo petshop" class="logo__petshop">sabemos que seu pet é parte da família.<br> Por isso, oferecemos um atendimento completo, humanizado e especializado para garantir a saúde e o bem-estar do seu melhor amigo.</p><img src="/imagem/pegadas.png" alt="Pegadas" class="pegadas">
     
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" required>
+    </section>
     
-            <button type="submit" onclick="cadastroCliente()">Cadastrar</button>
-        </form>
+    <div class="newslatter__container">
+        <aside class="newslatter__content">
+            <h1 class="novidades">Receba nossas novidades!</h1>
 
-        <p>o enviar seus dados você aceita os Termos de Uso e Política de Privacidade do site, bem como compartilhar suas informações com as demais empresas do Grupo Pet Care. Prometemos não utilizar suas informações de contato para enviar qualquer tipo de SPAM.</p>
-    </aside>
-    <footer>
-        <address>
-            ENDEREÇO <br/>Rua Fly, SN
+                <form action="seu-script.php" method="POST">
+                <div class="dados__container">
+                    <label for="nome"></label>
+                    <input type="text" name="nome" id="nome" required class="dados__content" placeholder="Digite seu nome*"> 
+            
+                    <label for="email"></label>
+                    <input type="email" name="email" id="email" required class="dados__content" placeholder="Digite seu e-mail*">
+                    <button type="submit" onclick="cadastroCliente()" class="submit" aria-label="Cadastrar na newsletter">Cadastrar</button>
+                </div>
+                    
+                </form>
+
+                <p class="termos">Ao enviar seus dados você aceita os Termos de Uso e Política de Privacidade do site, bem como compartilhar suas informações com as demais empresas do Grupo Pet Care. Prometemos não utilizar suas informações de contato para enviar qualquer tipo de SPAM.</p>
+        </aside>
+    </div>
+
+    <footer class="rodapé">
+        <address class="endereço">
+            ENDEREÇO <br/>Rua Fly, S/N
         </address>
-        <p>HORARIO DE FUNCIONAMENTO <br/> De segunda à sexta-feira <br/> das 08h às 18h</p>
+        <p class="funcionamento">HORARIO DE FUNCIONAMENTO <br/> De segunda à sexta-feira <br/> das 08h às 18h</p>
 
-        <p>Nossas Redes</p>
-        <a href="https://www.instagram.com"><img src="imagem/icon-instagram.png" alt="instagram" id="icon-instagram"></a>
-        <a href=""><img src="imagem/icon-whatsapp.png" alt="whatsapp" id="icon-whatsapp"></a>
+        
+        <p class="redes__sociais">Nossas Redes </p>
+        <div class="redes">
+        <a href="https://www.instagram.com"><img src="imagem/icon-instagram.png" alt="instagram" id="icon-instagram" class="icone"></a>
+        <a href=""><img src="imagem/icon-whatsapp.png" alt="whatsapp" id="icon-whatsapp" class="icone"></a>
+        </div>
+       
     </footer>
     
 </body>

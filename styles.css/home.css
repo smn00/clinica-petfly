@@ -1,0 +1,261 @@
+:root {
+    --verde-1: #198f49;
+    --verde-2: #a8f4c4;
+    --verde-3: #e9f8f6;
+    --verde-4: #99f6bf;
+    --verde-5: #b9d2cf;
+    --verde-6: #1ba553;
+    --branco: #FFF;
+    --fonte-1: 'Poppins', serif;
+    --font-2:  'Lora', serif;  
+}
+
+/*Header*/
+
+.cabeçalho {
+    display: flex;
+    background-color: var(--verde-3);
+    justify-content: center;
+    justify-content: space-between;
+    padding: 25px;
+    margin: 0;
+}
+
+.logotipo {
+    height: 100px;
+    margin-left: 40%;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    text-align: right;
+}
+
+.login__veterinario {
+    color: var(--verde-1);
+    font-family: var(--fonte-1);
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.botão__acesso {
+    background-color: var(--verde-5);
+    border: solid 1px var(--verde-5);
+    border-radius: 24px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: var(--fonte-1);
+    font-weight: 800;
+    color: var(--verde-1);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.seta {
+    width: 20px;
+}
+
+/*Nav*/
+.navegação__container {
+    display: flex;
+    list-style: none;
+    background-color: var(--verde-6);
+    padding: 6px 0;
+    justify-content:center;
+    margin: 0;
+    gap: 200px;
+
+}
+
+.navegação__content {
+    width: auto;
+}
+
+
+.navegação__content a {
+    display: block;
+    text-decoration: none;
+    color: var(--verde-3);
+    text-transform: uppercase;
+    font-family: var(--fonte-1);
+    font-size: 25px;
+    margin: 0;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navegação__content a:hover{
+    transform: translateY(-10px);
+}
+
+/*Main*/
+
+.about__container {
+    display: flex;
+    background: url(/imagem/Veterinária.png);
+    background-repeat: no-repeat;
+    padding-bottom: 25%;
+    font-family: var(--font-2);
+    color: var(--verde-3);
+    background-size: cover;
+    height: 30vh;     
+}
+
+/*About*/
+
+.about__titulo {
+    border: px solid var(--verde-5);
+    border-radius: 70px;
+    background-color:rgba(185, 210, 207, 0.5);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 25%;
+    height: 80%;
+    padding: 20px;
+    font-family: var(--font-2);
+    font-size: 30px;
+    font-weight: 100;
+    color: var(--branco);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin-left: 80px;
+    position: relative;
+    top: 150%;
+}
+
+.saudação {
+    color: var(--verde-1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.logo__about {
+    width: 70%;
+    height: 30%;   
+}
+
+.logo__petshop {
+    position: relative;
+    top: 12px;
+    width: 20%;
+    height: 20%;
+}
+
+.pegadas {
+    height: 260px;
+    width: 10%;
+}
+
+.about__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--verde-3);
+    font-family: var(--font-2);
+    color: var(--verde-1);
+    font-family: var(--font-2);
+    font-size: 30px;
+    padding: 50px;
+}
+
+.parágrafo {
+    font-size: 40px;
+    text-align: center;
+    font-family: var(--font-2);
+    line-height: 60px;
+}
+
+/*Aside*/
+.newslatter__container {
+    background: linear-gradient(to bottom, #e9f8f6, #b5b1b1);
+    padding-bottom: 35px;
+}
+
+
+.newslatter__content {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--verde-6);
+    border: 1px solid var(--verde-6);
+    border-radius: 150px;
+    padding: 10px;
+    margin: 0 25px;
+    gap: 10px;
+}
+
+.novidades {
+    text-align: center;
+    font-family: var(--fonte-1);
+    font-size: 20px;
+    color: var(--branco);
+}
+
+.dados__container {
+display: flex;
+justify-content: center;
+text-align: center;
+font-family: var(--fonte-1);
+font-size: 20px;
+gap: 10px;
+}
+
+.dados__content {
+    border-radius: 26px;
+    border: 1px solid var(--branco);
+    padding: 5px;
+    width: 30%;
+    height: 20px;
+}
+
+::placeholder {
+    font-size: 15px;
+}
+
+.submit {
+    background-color: var(--verde-1);
+    color: var(--branco);
+    border: 1px solid var(--verde-1);
+    border-radius: 30px;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 700;
+   
+    cursor: pointer;
+}
+
+.termos {
+    color: var(--branco);
+    text-align: center;
+    font-family: var(--fonte-1);
+    font-size: 14px;
+    margin: 8px;
+}
+
+/*Footer*/
+.rodapé {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--verde-6);
+    color: var(--branco );
+    font-family: var(--fonte-1);
+    font-size: 14px;
+    padding-top: 18px;
+}
+
+.endereço {
+    margin: 10px 0 30px 300px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: row;
+}
+
+.redes a {
+    position: relative;
+    padding: 0 10px;
+    top: 45%;
+    right: 24em;
+}
