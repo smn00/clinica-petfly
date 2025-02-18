@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --cor-principal: #a6f1c5;
+    --cor-segunda: #000000;
+    --cor-terceira: #242424;
+    --fonte-princiapal: "popppins";
+}
+
+body{
+    background-color: var(--cor-principal);
+    padding: 30px;
+    
+}
+
+button{
+    left:150px;
+    margin-top:10px ;
+    width:150px;
+    border-radius: 5px ;
+    content: '* Required';
+    height: 30px;
+    font-size: 15px;
+    color: #000000;
+    background-color: transparent;
+    font-family: var(--fonte-princiapal);
+    outline: none;
+}
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--fonte-princiapal);
+    gap: 20px;
+    font-size: 17px;
+}
+
+.container__logo{
+    transform: scale(0.7);
+    padding: 10px;
+    
+}
+
+.container__form input {
+    width: 90%;
+    padding: 10px; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    border: 1px solid var(--cor-terceira); 
+}
+
+.container__link{
+    color: #242424;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.container__paragrafo{
+    font-size: 15px;
+}
